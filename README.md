@@ -13,7 +13,7 @@
 ### Guide / How to install: 
 #### <ins>Step 1:</ins>
 - Update to the latest version of the game and verify integrity the game contents.
-- Download the latest version in the [Releases]() tab
+- Download the latest version in the [Releases](https://github.com/nnbaocuong99/PanFuMods/releases) tab
 
 #### <ins>Step 2:</ins>
 - Extract the downloaded file, you will get a folder called `~mod`
