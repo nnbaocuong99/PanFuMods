@@ -149,3 +149,5 @@ if __name__ == "__main__":
 
     # Start the download process
     download_resources(resources['resource'], main_url, version, json_name, use_multi_connection=use_multi_connection, num_connections=num_connections, max_concurrent_files=max_concurrent_files)
+
+# CMD: pip install -r requirements.txt

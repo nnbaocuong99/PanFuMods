@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #626b6e; /* Claude AI color */
+        }
+        .big-text {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .download-btn {
+            background-color: #FFA500; /* Orange */
+            color: white;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 2rem; /* Rounded rectangle */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #FF8C00; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="big-text">CLICK TO DOWNLOAD</div>
+    <button class="download-btn" id="downloadBtn">Download</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            fetch('https://api.github.com/repos/nnbaocuong99/PanFuMods/releases/latest')
+                .then(response => response.json())
+                .then(data => {
+                    const assetUrl = data.assets[0].browser_download_url;
+                    window.location.href = assetUrl;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while fetching the download link. Please try again later.');
+                });
+        });
+    </script>
+</body>
+</html>
