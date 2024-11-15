@@ -10,7 +10,7 @@
 
 <br>
 
-### Guide / How to install: 
+### 1.4 version guide / How to install: 
 #### <ins>Step 1:</ins>
 - Update to the latest version of the game and verify integrity the game contents.
 - Download the latest version in the [Releases](https://github.com/nnbaocuong99/PanFuMods/releases) tab
@@ -18,8 +18,8 @@
 <br>
 
 #### <ins>Step 2:</ins>
-- Extract the downloaded file, you will get a folder called `~mod`
-- Copy the whole `~mod` and paste into your game directory:
+- Extract the downloaded file,
+- Copy and paste into your game directory:
   ```ruby
   \Wuthering Waves\Wuthering Waves Game\Client\Content\Paks
   ```
@@ -27,18 +27,4 @@
 <br>
 
 #### <ins>Step 3:</ins>
-- Browse to
-  ```ruby
-  Wuthering Waves\Wuthering Waves Game\Client\Binaries\Win64
-  ```
-- Right-click the Client-Win64-Shipping and  create shortcut on your Desktop
-- Back to your Desktop, right-click on the new shortcut and select `Properties.`
-- Look for the Target:  and add -fileopenlog at the end of the text. ***(it will contains 1 space before the minus and look like below)***
-  ```ruby
-  "Wuthering Waves\Wuthering Waves Game\Client\Binaries\Win64\Client-Win64-Shipping.exe" -fileopenlog
-  ```
-
-<br>
-
-#### <ins>Step 4:</ins>
-Launch the game with the shortcut you just create and modified in the Step 3, ***not the Original game launcher.***
+- Run the `Launcher` as Administrator
